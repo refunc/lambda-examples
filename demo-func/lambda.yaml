@@ -1,0 +1,12 @@
+metadata:
+  name: demo-func
+  namespace: default
+spec:
+  build:
+    source: .
+    manifest: requirements.txt
+    language: python
+    architecture: x86_64
+  handler: main.lambda_handler
+  timeout: 120
+  runtime: "python3.10"

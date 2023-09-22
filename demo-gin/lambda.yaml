@@ -1,0 +1,12 @@
+metadata:
+  name: demo-gin
+  namespace: default
+spec:
+  build:
+    source: .
+    manifest: go.mod
+    language: go
+    architecture: x86_64
+  handler: handler
+  timeout: 120
+  runtime: "golang1.x"
